@@ -1,9 +1,8 @@
 import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import react from '@vitejs/plugin-react-swc'
 
-// IMPORTANT: base must match your repo name
 export default defineConfig({
   base: '/newme/',
   build: { outDir: 'docs' },
-  plugins: [react()]
+  plugins: [react()],
 })
